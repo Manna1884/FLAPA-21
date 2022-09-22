@@ -256,4 +256,21 @@ variable "iam_instance_profile" {
     type = string
 }
 
+variable "instance_name3" {
+    description = "making basting host instance name a variable"
+    default = "basting_host_server"
+    type = string
+}
 
+variable "cidr_blocks_ingress_private_subnets" {
+    description = "making cidr blocks for ingress a variable"
+    default = ["0.0.0.0/0"]
+    type = list
+}
+
+
+variable "sec_group_name2" {
+    description = "making name of security group2 name a variable"
+    default = "Test-sec-basting-guest"
+    type = string
+}
